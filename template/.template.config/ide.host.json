@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json.schemastore.org/ide.host",
+  "symbolInfo": [
+    {
+      "id": "param",
+      "name": {
+        "text": "My parameter"
+      },
+      "isVisible": true
+    },
+    {
+      "id": "value",
+      "name": {
+        "text": "My value"
+      },
+      "isVisible": true
+    }
+  ]
+}

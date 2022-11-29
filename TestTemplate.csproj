@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0-alpha</PackageVersion>
+    <PackageId>TestTemplate</PackageId>
+    <Title>Test Project Template</Title>
+    <Authors>Andrea</Authors>
+    <Description>Test Template to reproduce an issue with VS for Mac.</Description>
+    <PackageTags>templates;test</PackageTags>
+
+    <TargetFramework>netstandard2.0</TargetFramework>
+    
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>template</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="template\**\*" Exclude="template\**\bin\**;template\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
